@@ -5,6 +5,22 @@ body {
     line-height: 1.5;
 }
 
+h1, h2, h3, p { 
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+
 h1 {
     font-size: 56px;
     font-weight: 700;
@@ -41,7 +57,17 @@ h2, h3 {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    min-width: 169px;
+    border: none;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-align: center;
 }
+
+
 
 .button:hover,
 .button:focus {
@@ -144,3 +170,69 @@ ul {
         letter-spacing: 0.02em;
         line-height: 1.2;
     }
+
+    .header .container {
+        display: flex;
+        gap: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-right: 15px;
+        align-items: center;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    nav {
+        margin-right: auto;
+        align-items: center;
+    }
+
+    .page-nav,
+    .contacts ul {
+        display: flex;
+        gap: 40px
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        margin-right: 76px;
+    }
+
+    .first-section .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 188px;
+        padding-bottom: 188px;
+        gap: 48px;
+    }   
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.second-section .container .features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: calc((100%-72px) / 4);
+    padding: 120px 15px;
+}
+
+.second-section .container .features li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 264px;
+}
