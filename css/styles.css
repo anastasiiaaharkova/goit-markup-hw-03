@@ -36,7 +36,7 @@ h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
-    letter-spacing: 0.02em
+    letter-spacing: 0.02em;
 }
 
 h2 {
@@ -184,15 +184,15 @@ ul {
         line-height: 1.2;
     }
 
+    .header {
+        border-bottom: 1px solid #E7E9FC;
+        padding: 24px 0;
+    }
+
     .header .container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 24px auto;
-    }
-
-    .header {
-        border-bottom: 1px solid #E7E9FC;
     }
 
     nav {
@@ -219,6 +219,10 @@ ul {
         align-items: center;
         gap: 48px;
     }   
+
+    .first-section h1 {
+        max-width: 496px;
+    }
 
 .visually-hidden {
     position: absolute;
@@ -284,13 +288,15 @@ ul {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.team .container .team-members li .team-content {
+    padding: 32px 16px;
+}
+
 .team .container .team-members li h3 {
-    padding: 32px 16px 0;
     margin-bottom: 8px;
 }
 
 .team .container .team-members li p {
-    padding: 0 16px 32px;
     margin: 0;
 }
 
@@ -319,8 +325,13 @@ ul {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.portfolio-section .container .portfolio li .portfolio-content {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
 .portfolio-section .container .portfolio li h3 {
-    padding: 32px 16px 0 16px;
     margin-bottom: 8px;
 }
 
