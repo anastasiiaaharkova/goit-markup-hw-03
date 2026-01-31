@@ -259,6 +259,7 @@ ul {
     flex-direction: column;
     align-items: start;
     flex: 1;
+    max-width: 264px;
     min-width: 0;
 }
 
@@ -342,7 +343,6 @@ ul {
 }
 
 .portfolio-section .container .portfolio li p {
-    padding: 0 16px 32px 16px;
     margin: 0;
 }
 
