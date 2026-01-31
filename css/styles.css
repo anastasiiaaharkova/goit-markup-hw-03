@@ -26,8 +26,9 @@ img {
     max-width: 100%;
 }
 
-.adress,
-.link {
+.contacts,
+.link,
+address {
     font-style: normal;
 }
 
@@ -186,7 +187,6 @@ ul {
 
     .header {
         border-bottom: 1px solid #E7E9FC;
-        padding: 24px 0;
     }
 
     .header .container {
@@ -203,7 +203,13 @@ ul {
     .page-nav,
     .contacts ul {
         display: flex;
-        gap: 40px
+        gap: 40px;
+    }
+
+    .page-nav .link,
+    .contacts .link {
+        display: block;
+        padding: 24px 0;
     }
 
     .header .logo {
@@ -245,7 +251,6 @@ ul {
 .second-section .container .features {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 24px;
 }
 
@@ -253,7 +258,8 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 264px;
+    flex: 1;
+    min-width: 0;
 }
 
 .second-section .container .features li h3 {
