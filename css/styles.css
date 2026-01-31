@@ -5,6 +5,12 @@ body {
     line-height: 1.5;
 }
 
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 h1, h2, h3, p { 
     margin: 0;
 }
@@ -63,7 +69,7 @@ h2, h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 4px;
     text-align: center;
 }
 
@@ -176,10 +182,7 @@ ul {
         gap: 40px;
         flex-direction: row;
         justify-content: space-between;
-        margin-right: 15px;
-        align-items: center;
-        margin-top: 24px;
-        margin-bottom: 24px;
+        padding: 24px 0;
     }
 
     nav {
@@ -193,7 +196,7 @@ ul {
         gap: 40px
     }
 
-    .logo {
+    .header .logo {
         display: flex;
         align-items: center;
         margin-left: 15px;
@@ -226,8 +229,9 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: calc((100%-72px) / 4);
-    padding: 120px 15px;
+    gap: 24px;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 .second-section .container .features li {
@@ -235,4 +239,82 @@ ul {
     flex-direction: column;
     align-items: start;
     width: 264px;
+}
+
+.team h2 {
+    padding-top: 120px;
+    text-align: center;
+}
+
+.team .container .team-members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 72px;
+    padding-bottom: 120px;
+}
+
+.team .container .team-members li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 264px;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team .container .team-members li h3 {
+    padding: 32px 16px 0;
+    margin-bottom: 8px;
+}
+
+.team .container .team-members li p {
+    padding: 0 16px 32px;
+    margin: 0;
+}
+
+.portfolio-section h2 {
+    padding-top: 120px;
+    text-align: center;
+}
+.portfolio-section .container .portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-top: 72px;
+    padding-bottom: 120px;
+}
+
+.portfolio-section .container .portfolio li {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-section .container .portfolio li h3 {
+    padding: 32px 16px 0 16px;
+    margin-bottom: 8px;
+}
+
+.portfolio-section .container .portfolio li p {
+    padding: 0 16px 32px 16px;
+    margin: 0;
+}
+
+.footer .container {
+    width: 1158px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer p {
+    text-align: left;
+    width: 264px;
+    margin-top: 16px;
 }
